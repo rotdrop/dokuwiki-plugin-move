@@ -1,12 +1,14 @@
 <?php
-
 /**
  * DokuWiki Plugin move (Remote Component)
  *
  * @license GPL 2 http://www.gnu.org/licenses/gpl-2.0.html
  * @author Claus-Justus Heine <himself@claus-justus-heine.de>
  */
-class remote_plugin_move extends DokuWiki_Remote_Plugin
+
+use dokuwiki\Extension\RemotePlugin;
+
+class remote_plugin_move extends RemotePlugin
 {
     /**
      * Rename/move a given page
